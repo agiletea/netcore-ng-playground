@@ -1,0 +1,40 @@
+﻿
+<div *ngIf="isBusy else onInit">
+	<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<ng-template #onInit>
+	<br/>
+	<mat-card>
+		<mat-card-header>
+			<mat-icon mat-card-avatar color="primary">location_city</mat-icon>
+			<mat-card-title>
+				My Data
+			</mat-card-title>
+		</mat-card-header>
+		<mat-card-content>
+			<div class="row">
+				<div class="col-md-1"><strong>Id</strong></div>
+				<div class="col-md-4"><strong>Name</strong></div>
+				<div class="col-md-4"><strong>Description</strong></div>
+				<div class="col-md-3"></div>
+			</div>
+			<div *ngFor="let item of model">
+				<br />
+				<div class="row">
+					<div class="col-md-1">{{item.id}}</div>
+					<div class="col-md-4">{{item.name}}</div>
+					<div class="col-md-4">{{item.description}}</div>
+					<div class="col-md-3">
+						<button mat-raised-button color="primary">Like</button>
+					</div>
+				</div>
+			</div>
+		</mat-card-content>
+		<mat-card-actions>
+			<button mat-button>LIKE</button>
+			<button mat-button>SHARE</button>
+		</mat-card-actions>
+	</mat-card>
+
+</ng-template>
