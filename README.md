@@ -11,11 +11,11 @@ Genreated from the vanilla asp.net core web application + Angular template, the 
 4. Added CSS folder under wwwroot for dev style sources to add in the Material Theme and any custom css (used by the gulp routines as the source for the *.min.css)
 5. Added a new component (mydata) to demo the creation of a component using an intermediary injectable service, an mvc controller (as an api) and some of the material components
 
-##Requirements
+## Requirements
 1. VS 2017 (not yet testedt on VS2015)
 2. Check you have node (min version 8) and npm (min version 5) installed and up-to-date (https://www.npmjs.com/get-npm)
 
-##Get Started
+## Get Started
 
 After you have cloned the initial repository you will need to intall the node modules:
 
